@@ -18,7 +18,11 @@ class _WelcomePageState extends State<WelcomePage> {
       ),
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
+<<<<<<< HEAD
           if (constraints.maxWidth > 800) {
+=======
+          if (constraints.maxWidth > 600) {
+>>>>>>> UI responsive layout home page
             return _buildWideContainers();
           } else {
             return _buildNarrowContainer();
@@ -47,6 +51,7 @@ class _WelcomePageState extends State<WelcomePage> {
                         children: [
                           Positioned(
                             left: 410,
+
                             top: 1,
                             child: Image(
                               width: 200,
@@ -169,7 +174,7 @@ class _WelcomePageState extends State<WelcomePage> {
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         color: Color(0xf2e5e5e5),
-                                        fontSize: 20,
+                                        fontSize: 24,
                                         fontFamily: 'Open Sans',
                                         fontWeight: FontWeight.w500,
                                         letterSpacing: 2.40),
@@ -188,7 +193,7 @@ class _WelcomePageState extends State<WelcomePage> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontSize: 24,
                                       fontFamily: 'Open Sans',
                                       fontWeight: FontWeight.w500,
                                       letterSpacing: 2.40),
